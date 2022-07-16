@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Crypterium Wars</title>
+        <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="scripts/web3.min.js"></script>
+        <script type="text/javascript" src="scripts/crypteriumwars_abi.js"></script>
+        <script type="text/javascript" src="scripts/logic.js"></script>
+        <link rel="stylesheet" href="styles/main.css" />
+    </head>
+    <body>
+        <h1 id="heading">Crypterium Wars</h1>
+        <!-- Display Commander of the user -->
+        <div id="commander-creation-box" class="main-div">
+            <!-- User has a Commander -->
+            <span id="mycommander-name"></span>
+            <br/><br/>
+            <div id="mycommander"></div>
+            <!-- User has to create a Commander -->
+            <p id="no-commander">You don't have a Commander!</p>
+            <input type="text" placeholder="Name" id="commander-name" />
+            <button id="create-commander">Create Commander</button>
+            <span id="create-commander-result">Creating your Commander...</span>
+        </div>
+        <!-- Display actions that can be done be the user -->
+        <div id="actions-box" class="main-div">
+            <!-- Harvest Crypterium -->
+            <button id="harvest">Harvest Crypterium</button>
+            <span id="harvesting">Harvesting Crypterium...</span>
+            <br/><br/>
+            <!-- Buy Crypterium -->
+            <input type="text" placeholder="Amount" id="buy-amount" class="input1" />
+            <button id="buy" class="btn1">Buy Crypterium</button>
+            <span id="buy-successfull">Buying Crypterium...</span>
+            <br/><br/>
+            <!-- Produce Infantry -->
+            <input type="text" placeholder="Amount" id="infantry-amount" class="input1" />
+            <button id="infantry" class="btn1">Produce Infantry</button>
+            <span id="producing-infantry">Producing Infantry...</span>
+            <br/><br/>
+            <!-- Produce Vehicle -->
+            <input type="text" placeholder="Amount" id="vehicle-amount" class="input1" />
+            <button id="vehicle" class="btn1">Produce Vehicle</button>
+            <span id="producing-vehicle">Producing Vehicle...</span>
+            <br/><br/>
+            <!-- Produce Aircraft -->
+            <input type="text" placeholder="Amount" id="aircraft-amount" class="input1" />
+            <button id="aircraft" class="btn1">Produce Aircraft</button>
+            <span id="producing-aircraft">Producing Aircraft...</span>
+            <br/><br/>
+            <!-- Attack -->
+            <input type="text" placeholder="Address" id="attack-address" />
+            <input type="text" placeholder="Amount" id="attack-amount" />
+            <button id="attack">Attack</button>
+            <span id="attack-launched">Attack launched...</span>
+            <br/><br/>
+            <!-- Change name of Commander -->
+            <input type="text" placeholder="Name" id="new-commander-name" class="input1">
+            <button id="change-name" class="btn1">Change Name</button>
+            <span id="changing-name">Changing Name...</span>
+            <br/><br/>
+            <!-- Start Mission -->
+            <button id="start-mission">Start Mission</button>
+            <span id="started-mission">Mission started...</span>
+        </div>
+        <!-- Display all Commanders -->
+        <div id="list-commanders-box" class="main-div">
+            <p id="commander-list-text">List of Commanders</p>
+            <div id="allcommanders"></div>
+        </div>
+    </body>
+</html>
